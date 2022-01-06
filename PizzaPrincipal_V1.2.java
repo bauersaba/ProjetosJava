@@ -54,7 +54,7 @@ public class PizzaPrincipal {
 	private String driver = "com.mysql.cj.jdbc.Driver";
 	private String url = "jdbc:mysql://localhost:3306/devpizza";
 	private String user = "root";
-	private String password = "Killers2021";
+	private String password = "password for database";
 	private int selecMenu = 0;
 	private JTextField textIDpizza;
 	private JTextField textSabor;
@@ -83,7 +83,7 @@ public class PizzaPrincipal {
 	/**
 	 * Create the application.
 	 */
-	public void Dropfield() {                             //FunÁ„o para limpar os campos cliente.
+	public void Dropfield() {                             //Fun√ß√£o para limpar os campos cliente.
 		
 		textNome.setText("");
 		textRua.setText("");
@@ -97,7 +97,7 @@ public class PizzaPrincipal {
 		
 	}
 	
-	public void editableField() {                         //FunÁ„o para desabilitar a ediÁ„o dos campos
+	public void editableField() {                         //Fun√ß√£o para desabilitar a edi√ß√£o dos campos
 		textNome.setEditable(false);
 		textRua.setEditable(false);
 		textBairro.setEditable(false);
@@ -135,7 +135,7 @@ public class PizzaPrincipal {
 	}*/
 	
 	
-	private String[] buscarTelefone(String valor)       //Conex„o com o BD e busca por telefone
+	private String[] buscarTelefone(String valor)       //Conex√£o com o BD e busca por telefone
 	{
 		String[] localiza = null;
 		try {
@@ -167,7 +167,7 @@ public class PizzaPrincipal {
 		return localiza;
 	}
 	
-	private String[] buscarCodSabor(int idsabor)       //Conex„o com o BD e busca sabor
+	private String[] buscarCodSabor(int idsabor)       //Conex√£o com o BD e busca sabor
 	{
 		String[] localiza = null;
 		try {
@@ -437,7 +437,7 @@ public class PizzaPrincipal {
 						JOptionPane.showMessageDialog(btnAtualizarView,"Nenhum sabor encontrado!");
 					}
 
-					//chamar funÁ„o de pedido  aqui!!!!!
+					//chamar fun√ß√£o de pedido  aqui!!!!!
 				}
 				}
 		
@@ -641,7 +641,7 @@ public class PizzaPrincipal {
 					JOptionPane.showMessageDialog(mntmNewMenuItem_1, "Nenhum sabor encontrado!");
 				}*/
 
-				//chamar funÁ„o de pedido  aqui!!!!!
+				//chamar fun√ß√£o de pedido  aqui!!!!!
 			}
 		});
 		mnNewMenu.add(mntmNewMenuItem_1);
